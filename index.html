@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notific</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="splash-screen">
+        <img src="logo.png" alt="Logo do Aplicativo">
+    </div>
+    <div class="app-container">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo do Aplicativo">
+        </div>
+        <div class="task-input-container">
+            <textarea id="taskInput" placeholder="O que quer ser lembrado?"></textarea>
+            <div class="input-group">
+                <input type="date" id="dateInput">
+                <input type="time" id="timeInput">
+            </div>
+            <button onclick="addTask()">Adicionar Trabalho</button>
+        </div>
+        <div class="tasks-container" id="tasksContainer">
+            <!-- Trabalhos aparecerão aqui -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
